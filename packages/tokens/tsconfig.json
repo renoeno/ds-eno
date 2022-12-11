@@ -1,0 +1,4 @@
+{
+  "extends": "@renodev/ts-config-ds-eno/base.json",
+  "include": ["src"]
+}

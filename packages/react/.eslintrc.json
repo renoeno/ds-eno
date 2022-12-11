@@ -1,0 +1,3 @@
+{
+  "extends": "@renodev/eslint-config-ds-eno"
+}
