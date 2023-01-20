@@ -23,11 +23,28 @@ export const Link = styled('a', {
   },
 
   '&:hover::after': {
-    // left: 25%;
     width: '50%',
+  },
+
+  '&:active::after': {
+    width: '50%',
+  },
+
+  '&[disabled]': {
+    pointerEvents: 'none',
+    color: '$text',
+
+    '&::after': {
+      width: 0,
+    },
+
+    '&:active::after': {
+      width: 0,
+    },
   },
 })
 
 export interface LinkProps extends ComponentProps<typeof Link> {
   as?: ElementType
+  disabled?: boolean
 }

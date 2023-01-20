@@ -11,3 +11,9 @@ export default {
 } as Meta<LinkProps>
 
 export const Primary: StoryObj<LinkProps> = {}
+
+export const Disabled: StoryObj<LinkProps> = {
+  args: {
+    disabled: true,
+  },
+}
