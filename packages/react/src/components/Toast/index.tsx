@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react'
-import { Check, WarningCircle, Info, Warning, X } from 'phosphor-react'
+import { Check, Info, Warning, X } from 'phosphor-react'
 import {
   ToastAction,
   ToastContainer,

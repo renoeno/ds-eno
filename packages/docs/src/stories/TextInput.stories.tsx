@@ -1,6 +1,12 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, TextInput, TextInputProps, Text } from '@renodev/react-ds-eno'
+import {
+  Box,
+  TextInput,
+  TextInputProps,
+  Text,
+  Label,
+} from '@renodev/react-ds-eno'
 
 export default {
   title: 'Form/TextInput',
@@ -13,7 +19,7 @@ export default {
           as="label"
           css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
         >
-          <Text size="sm">Username</Text>
+          <Label>Username</Label>
           {Story()}
         </Box>
       )
