@@ -1,4 +1,3 @@
-import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
 import { Button, ButtonProps } from '@renodev/react-ds-eno'
 
