@@ -11,6 +11,7 @@ export const ImageContainer = styled('img', {
   borderRadius: '$sm',
 })
 
-export const VideoContainer = styled('video', {
-  width: '100%',
+export const VideoContainer = styled('iframe', {
+  // width: '100%',
+  borderRadius: '$sm',
 })

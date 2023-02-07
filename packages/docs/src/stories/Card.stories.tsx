@@ -1,20 +1,27 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
-import { Card, CardProps, Text } from '@renodev/react-ds-eno'
+import {
+  CardContainer,
+  CardContent,
+  CardActions,
+  CardProps,
+  Text,
+  Button,
+} from '@renodev/react-ds-eno'
 
 export default {
   title: 'Surfaces/Card',
-  component: Card,
+  component: CardContainer,
   args: {
     children: (
-      <>
+      <CardContent>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae
           repellendus voluptates molestias nobis culpa ut ex cupiditate nemo
           quod! Fuga dolor pariatur impedit ipsa, laudantium quisquam
           exercitationem architecto necessitatibus.
         </Text>
-      </>
+      </CardContent>
     ),
   },
 } as Meta<CardProps>
@@ -24,5 +31,28 @@ export const Primary: StoryObj<CardProps> = {}
 export const ShadowCard: StoryObj<CardProps> = {
   args: {
     variant: 'shadow',
+  },
+}
+
+export const ActionsCard: StoryObj<CardProps> = {
+  args: {
+    children: (
+      <>
+        <CardContent>
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae
+            repellendus voluptates molestias nobis culpa ut ex cupiditate nemo
+            quod! Fuga dolor pariatur impedit ipsa, laudantium quisquam
+            exercitationem architecto necessitatibus.
+          </Text>
+        </CardContent>
+        <CardActions>
+          <Button size="sm" variant="tertiary">
+            Cancel
+          </Button>
+          <Button size="sm">Save</Button>
+        </CardActions>
+      </>
+    ),
   },
 }

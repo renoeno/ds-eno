@@ -15,3 +15,11 @@ export const ImageMedia: StoryObj<MediaProps> = {
     alt: 'Image',
   },
 }
+
+export const VideoMedia: StoryObj<MediaProps> = {
+  args: {
+    component: 'video',
+    src: 'https://player.vimeo.com/video/286898202',
+    alt: 'Video',
+  },
+}
