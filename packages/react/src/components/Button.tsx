@@ -19,6 +19,8 @@ export const Button = styled('button', {
 
   cursor: 'pointer',
 
+  transition: '$main',
+
   '&:disabled': {
     cursor: 'not-allowed',
     color: '$text',

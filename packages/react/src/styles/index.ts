@@ -6,6 +6,7 @@ import {
   lineHeights,
   radii,
   space,
+  transitions,
 } from '@renodev/tokens-ds-eno'
 import { createStitches, defaultThemeMap } from '@stitches/react'
 
@@ -33,5 +34,6 @@ export const {
     lineHeights,
     radii,
     space,
+    transitions,
   },
 })

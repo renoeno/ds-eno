@@ -7,3 +7,5 @@ export * from './line-heights'
 
 export * from './space'
 export * from './radii'
+
+export * from './transitions'

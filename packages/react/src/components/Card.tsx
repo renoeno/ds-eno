@@ -1,12 +1,11 @@
 import { ComponentProps } from 'react'
 
-import { styled } from '../../styles'
+import { styled } from '../styles'
 
 export const CardContainer = styled('div', {
-  padding: '$4',
   borderRadius: '$md',
   backgroundColor: '$light',
-  maxWidth: 320,
+  maxWidth: 360,
 
   variants: {
     variant: {
@@ -29,7 +28,10 @@ export const CardContent = styled('div', {
   padding: '$4',
 })
 
+export const CardMedia = styled('div', {})
+
 export const CardActions = styled('div', {
+  padding: '$4',
   display: 'flex',
   justifyContent: 'flex-end',
 })
