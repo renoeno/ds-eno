@@ -23,17 +23,20 @@ export const Primary: StoryObj<ToastProps> = {}
 export const Success: StoryObj<ToastProps> = {
   args: {
     severity: 'success',
+    children: 'Success!',
   },
 }
 
 export const Info: StoryObj<ToastProps> = {
   args: {
     severity: 'info',
+    children: 'Info',
   },
 }
 
 export const Warning: StoryObj<ToastProps> = {
   args: {
     severity: 'warning',
+    children: 'Warning!',
   },
 }

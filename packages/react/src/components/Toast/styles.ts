@@ -22,7 +22,7 @@ export const ToastProvider = styled(ToastPrimitive.Provider, {})
 
 export const ToastContainer = styled(ToastPrimitive.Root, {
   fontFamily: '$default',
-  backgroundColor: '$secondary300',
+  backgroundColor: '$secondary700',
   lineHeight: '$tall',
   borderRadius: '$md',
   border: 0,
@@ -44,7 +44,7 @@ export const ToastContainer = styled(ToastPrimitive.Root, {
 
   '&[severity="warning"]': {
     '& svg': {
-      color: '$secondary700',
+      color: '$secondary300',
     },
   },
 
@@ -100,4 +100,19 @@ export const ToastViewport = styled(ToastPrimitive.Viewport, {
   listStyle: 'none',
   zIndex: 9999,
   outline: 'none',
+})
+
+export const IconContainer = styled('div', {
+  color: '$text',
+  borderRadius: '$xs',
+  padding: '$1 $1 0.1rem $1',
+  position: 'absolute',
+  top: 10,
+  right: 10,
+  transition: '$main',
+  cursor: 'pointer',
+
+  '&:hover': {
+    color: '$subtleText',
+  },
 })

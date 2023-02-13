@@ -2,10 +2,10 @@ export const colors = {
   white: '#FFF',
   light: '#FAFCFE',
   black: '#000',
-  dark: '#0E0E2C',
+  dark: '#4A4A68',
 
   accent: '#ECF1F4',
-  text: '#4A4A68',
+  text: '#0E0E2C',
   subtleText: '#8C8CA1',
 
   primary100: '#145243',

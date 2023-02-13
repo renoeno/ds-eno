@@ -36,6 +36,18 @@ export const ShadowCard: StoryObj<CardProps> = {
   },
 }
 
+export const CardSmall: StoryObj<CardProps> = {
+  args: {
+    size: 'sm',
+  },
+}
+
+export const CardLarge: StoryObj<CardProps> = {
+  args: {
+    size: 'lg',
+  },
+}
+
 export const ActionsCard: StoryObj<CardProps> = {
   args: {
     children: (

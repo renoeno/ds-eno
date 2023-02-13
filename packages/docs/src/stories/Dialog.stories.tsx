@@ -18,3 +18,15 @@ export default {
 } as Meta<DialogProps>
 
 export const Primary: StoryObj<DialogProps> = {}
+
+export const DialogSmall: StoryObj<DialogProps> = {
+  args: {
+    size: 'sm',
+  },
+}
+
+export const DialogLarge: StoryObj<DialogProps> = {
+  args: {
+    size: 'lg',
+  },
+}

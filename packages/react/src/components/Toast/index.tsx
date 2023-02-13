@@ -27,11 +27,11 @@ export const Toast = ({
     if (severity) {
       switch (severity) {
         case 'success':
-          return <Check />
+          return <Check color="#31D0AA" />
         case 'info':
-          return <Info />
+          return <Info color="#ECF1F4" />
         case 'warning':
-          return <Warning />
+          return <Warning color="#734445" />
         default:
           break
       }
@@ -41,7 +41,7 @@ export const Toast = ({
   }
   return (
     <ToastProvider>
-      <ToastContainer severity={severity} open={open} {...props}>
+      <ToastContainer open={open} {...props}>
         {severityIcon()}
         <ToastDescription>{children}</ToastDescription>
         <ToastAction asChild altText={altText}>

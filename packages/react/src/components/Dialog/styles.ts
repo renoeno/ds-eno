@@ -19,6 +19,21 @@ export const DialogTrigger = styled(Dialog.Trigger, {})
 
 export const DialogClose = styled(Dialog.Close, {})
 
+export const DialogCloseContainer = styled('div', {
+  color: '$text',
+  borderRadius: '$xs',
+  padding: '$1 $1 0.1rem $1',
+  position: 'absolute',
+  top: 10,
+  right: 10,
+  transition: '$main',
+  cursor: 'pointer',
+
+  '&:hover': {
+    color: '$subtleText',
+  },
+})
+
 export const DialogOverlay = styled(Dialog.Overlay, {
   backgroundColor: '$dark',
   position: 'fixed',
@@ -35,21 +50,39 @@ export const DialogContent = styled(Dialog.Content, {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '90vw',
-  maxWidth: '450px',
   maxHeight: '85vh',
-  padding: '$6',
+  padding: '$10 $10 $6 $10',
   animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
   '&:focus': { outline: 'none' },
   fontFamily: '$default',
+
+  variants: {
+    size: {
+      sm: {
+        maxWidth: 360,
+      },
+      md: {
+        maxWidth: 520,
+      },
+      lg: {
+        maxWidth: 680,
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'md',
+  },
 })
 
 export const DialogTitle = styled(Dialog.Title, {
   margin: 0,
   fontWeight: '$medium',
-  color: '$text',
+  color: '$dark',
   fontSize: '$lg',
   fontFamily: '$heading',
+  borderBottom: '1px solid $accent',
+  paddingBottom: '$2',
 })
 
 export const DialogDescription = styled(Dialog.Description, {

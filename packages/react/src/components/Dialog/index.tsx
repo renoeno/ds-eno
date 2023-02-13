@@ -2,6 +2,7 @@ import React, { ComponentProps } from 'react'
 import { X } from 'phosphor-react'
 import {
   DialogClose,
+  DialogCloseContainer,
   DialogContent,
   DialogDescription,
   DialogOverlay,
@@ -22,18 +23,22 @@ export function Dialog() {
       <DialogPortal>
         <DialogOverlay />
         <DialogContent>
+          <DialogCloseContainer>
+            <DialogClose asChild>
+              <X />
+            </DialogClose>
+          </DialogCloseContainer>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>
             Make changes to your profile here. Click save when youre done.
           </DialogDescription>
-          <Box css={{ marginTop: 25, justifyContent: 'flex-end' }}>
+          <Box
+            css={{ marginTop: 25, display: 'flex', justifyContent: 'flex-end' }}
+          >
             <DialogClose asChild>
               <Button size="sm">Save changes</Button>
             </DialogClose>
           </Box>
-          <DialogClose asChild>
-            <X size={16} />
-          </DialogClose>
         </DialogContent>
       </DialogPortal>
     </DialogRoot>

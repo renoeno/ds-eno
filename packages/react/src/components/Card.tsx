@@ -5,9 +5,19 @@ import { styled } from '../styles'
 export const CardContainer = styled('div', {
   borderRadius: '$md',
   backgroundColor: '$light',
-  maxWidth: 360,
 
   variants: {
+    size: {
+      sm: {
+        maxWidth: 360,
+      },
+      md: {
+        maxWidth: 480,
+      },
+      lg: {
+        maxWidth: 600,
+      },
+    },
     variant: {
       flat: {
         border: '1px solid $accent',
@@ -20,6 +30,7 @@ export const CardContainer = styled('div', {
   },
 
   defaultVariants: {
+    size: 'md',
     variant: 'flat',
   },
 })
