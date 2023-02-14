@@ -1,5 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
 import { Toggle, ToggleProps, Box } from '@renodev/react-ds-eno'
+import React from 'react'
 
 export default {
   title: 'Data display/Toggle',

@@ -1,5 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
 import { Tooltip, TooltipProps, Box } from '@renodev/react-ds-eno'
+import React from 'react'
 
 export default {
   title: 'Data display/Tooltip',
@@ -14,6 +15,9 @@ export default {
           justifyContent: 'center',
           fontWeight: '$medium',
           fontFamily: '$default',
+          background: '$dark',
+          borderRadius: '$sm',
+          padding: '$2 0',
         }}
       >
         21

@@ -1,5 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
 import { Box, Checkbox, CheckboxProps, Text } from '@renodev/react-ds-eno'
+import React from 'react'
 
 export default {
   title: 'Form/Checkbox',

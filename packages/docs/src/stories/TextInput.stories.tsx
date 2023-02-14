@@ -1,12 +1,6 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
-import {
-  Box,
-  TextInput,
-  TextInputProps,
-  Text,
-  Label,
-} from '@renodev/react-ds-eno'
+import { Box, TextInput, TextInputProps, Label } from '@renodev/react-ds-eno'
 
 export default {
   title: 'Form/TextInput',

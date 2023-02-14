@@ -35,8 +35,8 @@ export const TooltipContent = styled(TooltipPrimitive.Content, {
   borderRadius: '$xs',
   padding: '$3 $4',
   fontSize: '$md',
-  color: '$light',
-  backgroundColor: '$secondary700',
+  color: '$text',
+  backgroundColor: '$accent',
   boxShadow:
     'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   userSelect: 'none',
@@ -54,5 +54,5 @@ export const TooltipContent = styled(TooltipPrimitive.Content, {
 })
 
 export const TooltipArrow = styled(TooltipPrimitive.Arrow, {
-  fill: '$secondary700',
+  fill: '$accent',
 })

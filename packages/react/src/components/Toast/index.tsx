@@ -29,9 +29,9 @@ export const Toast = ({
         case 'success':
           return <Check color="#31D0AA" />
         case 'info':
-          return <Info color="#ECF1F4" />
+          return <Info color="#0E0E2C" />
         case 'warning':
-          return <Warning color="#734445" />
+          return <Warning color="#F49094" />
         default:
           break
       }
@@ -45,7 +45,7 @@ export const Toast = ({
         {severityIcon()}
         <ToastDescription>{children}</ToastDescription>
         <ToastAction asChild altText={altText}>
-          <X color="white" size={16} />
+          <X size={16} />
         </ToastAction>
       </ToastContainer>
 

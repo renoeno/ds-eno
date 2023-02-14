@@ -22,31 +22,13 @@ export const ToastProvider = styled(ToastPrimitive.Provider, {})
 
 export const ToastContainer = styled(ToastPrimitive.Root, {
   fontFamily: '$default',
-  backgroundColor: '$secondary700',
+  backgroundColor: '$accent',
   lineHeight: '$tall',
   borderRadius: '$md',
   border: 0,
   padding: '$3 $6',
   display: 'flex',
   alignItems: 'center',
-
-  '&[severity="success"]': {
-    '& svg': {
-      color: '$primary900',
-    },
-  },
-
-  '&[severity="info"]': {
-    '& svg': {
-      color: '$accent',
-    },
-  },
-
-  '&[severity="warning"]': {
-    '& svg': {
-      color: '$secondary300',
-    },
-  },
 
   '@media (prefers-reduced-motion: no-preference)': {
     '&[data-state="open"]': {
@@ -72,14 +54,14 @@ export const ToastDescription = styled(ToastPrimitive.Description, {
   padding: '0 $2',
   gridArea: 'description',
   margin: 0,
-  color: '$light',
+  color: '$text',
   fontWeight: '$regular',
   fontSize: '$md',
 })
 
 export const ToastAction = styled(ToastPrimitive.Action, {
   gridArea: 'auto',
-  color: '$light',
+  color: '$text',
   fontSize: '$lg',
   cursor: 'pointer',
 })
