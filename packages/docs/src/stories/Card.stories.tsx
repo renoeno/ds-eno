@@ -1,7 +1,7 @@
 import React from 'react'
 import type { StoryObj, Meta } from '@storybook/react'
 import {
-  CardContainer,
+  Card,
   CardContent,
   CardActions,
   CardMedia,
@@ -13,7 +13,7 @@ import {
 
 export default {
   title: 'Surfaces/Card',
-  component: CardContainer,
+  component: Card,
   args: {
     children: (
       <CardContent>
@@ -25,6 +25,20 @@ export default {
         </Text>
       </CardContent>
     ),
+  },
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    variant: {
+      options: ['flat', 'shadow'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
   },
 } as Meta<CardProps>
 

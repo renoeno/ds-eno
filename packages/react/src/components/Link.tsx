@@ -48,3 +48,5 @@ export interface LinkProps extends ComponentProps<typeof Link> {
   as?: ElementType
   disabled?: boolean
 }
+
+Link.displayName = 'Link'

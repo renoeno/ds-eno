@@ -53,3 +53,5 @@ export const Toast = ({
     </ToastProvider>
   )
 }
+
+Toast.displayName = 'Toast'

@@ -6,3 +6,5 @@ export interface LabelProps extends ComponentProps<typeof LabelRoot> {}
 export function Label({ children }: LabelProps) {
   return <LabelRoot>{children}</LabelRoot>
 }
+
+Label.displayName = 'Label'

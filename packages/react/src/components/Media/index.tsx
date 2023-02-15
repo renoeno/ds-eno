@@ -15,3 +15,5 @@ export function Media({ children, component, src, alt }: MediaProps) {
     </MediaContainer>
   )
 }
+
+Media.displayName = 'Media'

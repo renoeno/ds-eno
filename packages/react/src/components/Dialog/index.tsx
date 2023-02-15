@@ -117,3 +117,5 @@ export function Dialog({ children, trigger, ...props }: DialogProps) {
     </DialogRoot>
   )
 }
+
+Dialog.displayName = 'Dialog'

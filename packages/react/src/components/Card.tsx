@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 
 import { styled } from '../styles'
 
-export const CardContainer = styled('div', {
+export const Card = styled('div', {
   borderRadius: '$md',
   backgroundColor: '$light',
 
@@ -47,4 +47,6 @@ export const CardActions = styled('div', {
   justifyContent: 'flex-end',
 })
 
-export interface CardProps extends ComponentProps<typeof CardContainer> {}
+export interface CardProps extends ComponentProps<typeof Card> {}
+
+Card.displayName = 'Card'

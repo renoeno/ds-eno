@@ -15,6 +15,14 @@ export default {
       </Box>
     ),
   },
+  argTypes: {
+    size: {
+      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta<TextProps>
 
 export const Primary: StoryObj<TextProps> = {}

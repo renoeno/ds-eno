@@ -24,6 +24,14 @@ export default {
     ),
     trigger: <Button size="md">Open</Button>,
   },
+  argTypes: {
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta<DialogProps>
 
 export const Primary: StoryObj<DialogProps> = {}
