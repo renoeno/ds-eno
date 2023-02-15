@@ -2,7 +2,7 @@
 
 ### Built on top of stitches and radix-ui
 
-#### Components
+#### List of components
 
 - Box
 - Button
