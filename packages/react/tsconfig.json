@@ -1,4 +1,4 @@
 {
   "extends": "@renodev/ts-config-ds-eno/react.json",
-  "include": ["src"]
+  "include": ["src", "types/**/*.d.ts"]
 }

@@ -9,6 +9,12 @@ import {
   transitions,
 } from '@renodev/tokens-ds-eno'
 import { createStitches, defaultThemeMap } from '@stitches/react'
+import barlowRegular from "../fonts/Barlow-Regular.ttf"
+import barlowMedium from "../fonts/Barlow-Medium.ttf"
+import barlowBold from "../fonts/Barlow-Bold.ttf"
+import oswaldRegular from "../fonts/Oswald-Regular.woff2"
+import oswaldMedium from "../fonts/Oswald-Medium.woff2"
+import oswaldBold from "../fonts/Oswald-Bold.woff2"
 
 export const {
   styled,
@@ -43,34 +49,33 @@ export const globalStyles = globalCss({
     {
       fontFamily: "Oswald",
       fontWeight: 400,
-      src: 'local("Oswald"), url(/fonts/Oswald-Regular.woff2)',
+      src: `local("Oswald") url(${oswaldRegular})`,
     },
     {
       fontFamily: "Oswald",
       fontWeight: 500,
-      src: 'local("Oswald"), url(/fonts/Oswald-Medium.woff2)',
+      src: `local("Oswald") url(${oswaldMedium})`,
     },
     {
       fontFamily: "Oswald",
       fontWeight: 700,
-      src: 'local("Oswald"), url(/fonts/Oswald-Bold.woff2)',
+      src: `local("Oswald") url(${oswaldBold})`,
     },
     {
       fontFamily: "Barlow",
       fontWeight: 400,
-      src: 'local("Barlow"), url(/fonts/Barlow-Regular.ttf)',
+      src: `local("Barlow") url(${barlowRegular})`,
     },
     {
       fontFamily: "Barlow",
       fontWeight: 500,
-      src: 'local("Barlow"), url(/fonts/Barlow-Medium.ttf)',
+      src: `local("Barlow") url(${barlowMedium})`,
     },
     {
       fontFamily: "Barlow",
       fontWeight: 700,
-      src: 'local("Barlow"), url(/fonts/Barlow-Bold.ttf)',
+      src: `local("Barlow") url(${barlowBold})`,
     },
   ],
 });
 
-globalStyles()
