@@ -1,5 +1,12 @@
 # @renodev/react-ds-eno
 
+## 4.0.0
+
+### Major Changes
+
+- eb0fc0c: add google fonts
+- eb0fc0c: add google fonts
+
 ## 3.0.0
 
 ### Major Changes
