@@ -7,7 +7,6 @@ import {
   ToastProvider,
   ToastViewport,
 } from './styles'
-
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   open: boolean
   swipeDirection?: string
